@@ -1,28 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
-html,body{
+html,
+body {
     height: 100%;
-    font-family:sans-serif;
+    font-family: sans-serif;
     scroll-behavior: smooth;
 }
-a:hover{
+a:hover {
     text-decoration: none;
 }
-.section-padding{
+.section-padding {
     padding: 70px;
 }
 /* Adding Fonts*/
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500&display=swap');
-
-.header{
+.header {
     background: linear-gradient(-40deg, #d1effc, #fff1f1);
-    
 }
-
 
 /* Header Navigation Styles */
 .navbar-nav .nav-item {
@@ -51,26 +49,26 @@ a:hover{
 .header-nav {
     min-height: 90px;
 }
-.navbar-brand img{
+.navbar-brand img {
     width: 100%;
     height: auto;
 }
-.main-menu ul li{
+.main-menu ul li {
     margin-left: 26px;
     text-align: center;
 }
-.main-menu ul li a{
+.main-menu ul li a {
     font-family: 'Poppins', sans-serif;
-    color: #070A57;
+    color: #070a57;
     font-weight: 500;
     font-size: 16px;
 }
-.main-menu ul li:hover{
+.main-menu ul li:hover {
     transform: scale(1.1);
     transition: 0.5s all ease;
 }
-button.nav-button{
-    background:#0380c2;
+button.nav-button {
+    background: #0380c2;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     padding: 5px 10px;
@@ -82,47 +80,45 @@ button.nav-button{
 
 /* Header Banner Area Styles */
 
-
-
 .container.header-content {
     height: 100%;
 }
-.highlight{
+.highlight {
     color: rgb(0, 149, 255);
 }
 .left-content h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 60px;
     font-weight: 500;
-    color: #070A57;
+    color: #070a57;
 }
-.centralize{
+.centralize {
     display: flex;
     align-items: center;
 }
 .left-content p {
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    color: #64707D;
+    color: #64707d;
 }
 .call-to-action button {
-    background:  rgb(0, 149, 255);;
+    background: rgb(0, 149, 255);
     border: none;
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 500;
     padding: 5px 10px;
 }
 .call-to-action a {
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 500;
     color: #0898cd;
     text-decoration: underline;
     margin-left: 30px;
 }
-.right-content img{
+.right-content img {
     width: 70%;
     padding-left: 30px;
 }
@@ -143,56 +139,57 @@ button.nav-button{
 }
 
 .process-block p {
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 400;
     padding-top: 10px;
 }
 
 .process-block h3 {
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 26px;
     font-weight: 500;
 }
-.project-discussion{
+.project-discussion {
     margin-left: 30px;
 }
 .project-discussion h2 {
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 45px;
     font-weight: 500;
-    color: #070A57;}
+    color: #070a57;
+}
 
 .project-discussion p {
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     line-height: 35px;
-    color: #64707D;}
+    color: #64707d;
+}
 
 .project-discussion button {
     background: #009dff;
     border: none;
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 500;
     padding: 10px 15px;
 }
 
 /* Services styles  */
-.services{
+.services {
     background: linear-gradient(30deg, #d5f2fb, #ffffff);
 }
 .service-heading {
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 45px;
     font-weight: 500;
-    color: #070A57;
+    color: #070a57;
 }
 
 /* Multiframe Carousel  */
 
 @media (min-width: 768px) {
-
     .service-carousel.carousel-inner .carousel-item-right.active,
     .service-carousel.carousel-inner .carousel-item-next {
         transform: translateX(50%);
@@ -206,7 +203,6 @@ button.nav-button{
 
 /* large - display 3 */
 @media (min-width: 992px) {
-
     .service-carousel.carousel-inner .carousel-item-right.active,
     .service-carousel.carousel-inner .carousel-item-next {
         transform: translateX(33%);
@@ -219,49 +215,50 @@ button.nav-button{
 }
 
 @media (max-width: 768px) {
-    .service-carousel.carousel-inner .carousel-item>div {
+    .service-carousel.carousel-inner .carousel-item > div {
         display: none;
     }
 
-    .service-carousel.carousel-inner .carousel-item>div:first-child {
+    .service-carousel.carousel-inner .carousel-item > div:first-child {
         display: block;
     }
 }
 
- .carousel-inner .carousel-item.active,
- .carousel-inner .carousel-item-next,
- .carousel-inner .carousel-item-prev {
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
     display: flex;
 }
 
- .carousel-inner .carousel-item-right,
- .carousel-inner .carousel-item-left {
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left {
     transform: translateX(0);
 }
-.service-card h5{
-	font-family:'Roboto',sans-serif;
-	font-size:26px;
-	font-weight:500;
-	color:#070A57;
+.service-card h5 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    color: #070a57;
 }
-.service-card p{
-	font-family:'Roboto',sans-serif;
-	font-size:18px;
-	color:#64707D;
+.service-card p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #64707d;
 }
-.service-card a{
-	color:#64707D;
-	font-family:'Roboto',sans-serif;
-	font-size:18px;
-	font-weight:500;
-	color:#64707D;
-	text-decoration:underline;
+.service-card a {
+    color: #64707d;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #64707d;
+    text-decoration: underline;
 }
-.service-card a:hover{
-	color:#00b7ff;
-	transition:all 0.5s ease;
+.service-card a:hover {
+    color: #00b7ff;
+    transition: all 0.5s ease;
 }
-.service-control-prev, .service-control-next {
+.service-control-prev,
+.service-control-next {
     height: 50px;
     width: 50px;
     outline: black;
@@ -281,7 +278,7 @@ button.nav-button{
 }
 
 /* Testimonial Styles  */
-.testimonial .card{
+.testimonial .card {
     border: none !important;
 }
 
@@ -293,39 +290,37 @@ a.carousel-control-next.testimonial-control {
     top: 60%;
     left: 5%;
 }
-.testimonial-control{
+.testimonial-control {
     max-width: 32px;
 }
 .testimonial-description h3 {
-	font-family: 'Roboto',sans-serif;
-	font-size: 45px;
-	font-weight: 500;
-	color: #009dff;
-    }
-
+    font-family: 'Roboto', sans-serif;
+    font-size: 45px;
+    font-weight: 500;
+    color: #009dff;
+}
 
 .testimonial-control-icon {
-	background: #009dff;
-	color: #070A57;
-	height: 32px;
+    background: #009dff;
+    color: #070a57;
+    height: 32px;
     width: 32px;
-    padding:5px;
+    padding: 5px;
 }
 .client-meta-data h5 {
-	font-family: 'Roboto',sans-serif;
-	font-size: 24px;
-	font-weight: 500;
-	color: #070A57;
-	}
-
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    color: #070a57;
+}
 
 .client-meta-data p {
-	font-family: 'Rubik',sans-serif;
-	font-size: 16px;
-	font-style: italic;
-	line-height:32px
-	}
-.coma{
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 32px;
+}
+.coma {
     position: absolute;
     top: 70%;
     left: -10%;
@@ -335,23 +330,23 @@ a.carousel-control-next.testimonial-control {
 
 /* Portfolio Styles  */
 
-.portfolio{
+.portfolio {
     background: linear-gradient(-40deg, #d5f0fb, #ffffff);
 }
- h2.portfolio-heading{
-    font-family: 'Roboto',sans-serif;
+h2.portfolio-heading {
+    font-family: 'Roboto', sans-serif;
     font-size: 45px;
     font-weight: 500;
-    color: #070A57;
+    color: #070a57;
 }
 .portfolio-buttons button {
     background: transparent;
     border: none;
     padding: 5px 10px;
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 500;
-    color: #070A57;
+    color: #070a57;
 }
 
 .portfolio-buttons button:hover {
@@ -361,58 +356,66 @@ a.carousel-control-next.testimonial-control {
 .portfolio-buttons {
     margin-bottom: 20px;
 }
-.myMixCont{
+.myMixCont {
     margin-top: 30px;
 }
-.myMixCont img{
+.myMixCont img {
     margin-bottom: 10px;
 }
 /* Partner Section Styles  */
 
 .partner-heading {
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 45px;
     font-weight: 500;
-    color: #070A57;
+    color: #070a57;
 }
 
 /* Footer Styles */
 
-.footer{
+.footer {
     background: linear-gradient(30deg, #d5effb, #ffffff);
 }
 section.footer.section-padding {
     padding-bottom: 10px;
 }
 .footer-widget-1 p {
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     line-height: 35px;
     margin-top: 20px;
     text-align: center;
 }
-.footer-widget-2 h3,.footer-widget-3 h3 {font-family: 'Roboto',sans-serif;font-size: 26px;font-weight: 500;line-height: 35px;}
+.footer-widget-2 h3,
+.footer-widget-3 h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 35px;
+}
 
-.footer-widget-2 ul li,.footer-widget-3 ul li {
+.footer-widget-2 ul li,
+.footer-widget-3 ul li {
     list-style: none;
     padding: 5px;
 }
 
-.footer-widget-2 ul li a,.footer-widget-3 ul li a {
-    font-family: 'Roboto',sans-serif;
+.footer-widget-2 ul li a,
+.footer-widget-3 ul li a {
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     line-height: 40px;
-    color: #64707D;
+    color: #64707d;
 }
-.footer-widget-4 p{
-    font-family: 'Roboto',sans-serif;
+.footer-widget-4 p {
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 40px;
     margin-top: 30px;
     margin-bottom: 20px;
 }
-.footer-widget-4 ul li{
+.footer-widget-4 ul li {
     list-style-type: none;
     display: inline;
     padding: 5px 10px;
@@ -429,13 +432,13 @@ section.footer.section-padding {
 
 /* Contact Us Styling  */
 
-.contact-header{
+.contact-header {
     max-height: 500px;
 }
-.contact-header .right-content img{
+.contact-header .right-content img {
     width: 100% !important;
 }
-.contact-header .container.header-content{
+.contact-header .container.header-content {
     max-height: 400px;
 }
 
@@ -447,111 +450,121 @@ section.footer.section-padding {
     text-align: center;
 }
 
-.office-block h3 {font-family: 'Roboto',sans-serif;font-weight: 500;font-size: 35px;line-height: 32px;color: #070A57;padding: 25px 0px;}
+.office-block h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 32px;
+    color: #070a57;
+    padding: 25px 0px;
+}
 
-.office-block p {font-family: 'Roboto',sans-serif;font-size: 18px;line-height: 35px;color: #64707D;}
+.office-block p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 35px;
+    color: #64707d;
+}
 
 #project-details form {
     background-color: white;
     color: #888888;
     text-align: left;
     padding-top: 20px;
-  }
-  
-  #project-details label {
+}
+
+#project-details label {
     display: none;
-  }
-  
-  #project-details input,
-  #project-details  textarea {
+}
+
+#project-details input,
+#project-details textarea {
     /* to create space for placing icon*/
     padding: 20px 10px 20px 32px;
     border-color: transparent;
     /* background-color: #FFDE11; */
     border-radius: 4px;
     border: 1px solid #dddddd;
-  }
-  
-  #project-details .btn-default {
+}
+
+#project-details .btn-default {
     margin-top: 5px;
     margin-bottom: 30px;
     padding: 15px 36px;
     background-color: #009dff;
     border: 0px;
-    color: #070A57;
+    color: #070a57;
     width: 100%;
     border-radius: 5px;
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 500;
-  }
-  
-  #project-details .btn-default:hover,
-  #project-details .btn-default:focus {
+}
+
+#project-details .btn-default:hover,
+#project-details .btn-default:focus {
     border-color: transparent;
     outline: 0px auto -webkit-focus-ring-color;
-  }
-  
-  /*position should be relative and z-index greater than one*/
-  #project-details .icon {
+}
+
+/*position should be relative and z-index greater than one*/
+#project-details .icon {
     position: relative;
     float: right;
     padding-right: 10px;
     margin-top: -30px;
     z-index: 2;
     color: #586794;
-  }
-  
-  #project-details .icon-textarea {
+}
+
+#project-details .icon-textarea {
     float: right;
     margin-top: -150px;
     padding-right: 10px;
     position: relative;
     z-index: 2;
     color: #586794;
-  }
-  #project-type{
+}
+#project-type {
     width: 100%;
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
-    color: #64707D;
+    color: #64707d;
     border: 1px solid #ddd;
-    padding:7px 10px 7px 32px;
-  }
+    padding: 7px 10px 7px 32px;
+}
 
-  /* Service Page Styles  */
+/* Service Page Styles  */
 
-  
 section.services {
     text-align: center;
 }
 .card-row-gap {
     padding-bottom: 2rem;
 }
-.card-body{
-background-color: #ffebef;
-
+.card-body {
+    background-color: #ffebef;
 }
-a.card-body{
+a.card-body {
     text-decoration: underline;
 }
-.best-solution img{
-	width:100%;
-	height:auto;
+.best-solution img {
+    width: 100%;
+    height: auto;
 }
 
 /* why choose */
 
 .service-type-gap {
- padding-bottom: 8rem;
+    padding-bottom: 8rem;
 }
 h2.col-md-6 {
     padding-bottom: 3rem;
     padding-top: 2rem;
-} */
-.feature-design-image {
+}
+*/ .feature-design-image {
     margin-bottom: 25px;
-	    display: flex;
+    display: flex;
     justify-content: center;
 }
 section.header.contact-header {
@@ -579,41 +592,41 @@ section.header.contact-header {
     padding: 15px;
 }
 .blog-category p {
-	font-family: 'Roboto',sans-serif;
-	font-size: 14px;
-	color: #009dff;
-	line-height: 35px;
-	}
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #009dff;
+    line-height: 35px;
+}
 
 .blog-content h2.blog-title {
-	font-family: 'Roboto',sans-serif;
-	font-size: 26px;
-	font-weight: 500;
-	color: #00a2ff;
-	line-height: 35px;
-	}
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    color: #00a2ff;
+    line-height: 35px;
+}
 
 .blog-content p.blog-exercpt {
-	font-family: 'Roboto',sans-serif;
-	font-size: 18px;
-	line-height: 35px;
-	color: #64707D;
-	}
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 35px;
+    color: #64707d;
+}
 
 .blog-meta h3 {
-	font-family: 'Roboto',sans-serif;
-	font-size: 18px;
-	font-weight: 400;
-	color: #070A57;
-	}
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #070a57;
+}
 
 .blog-meta p.date {
-	font-family: 'Roboto',sans-serif;
-	font-size: 12px;
-	line-height: 35px;
-	color: #64707D;
-	}
-	
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    line-height: 35px;
+    color: #64707d;
+}
+
 .pagination ul li {
     list-style: none;
     display: inline;
@@ -621,21 +634,28 @@ section.header.contact-header {
     padding: 10px;
 }
 .pagination ul li a {
-	font-family: 'Roboto',sans-serif;
-	font-size: 18px;
-	color: #64707D;
-	}
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #64707d;
+}
 
-.pagination ul li.previous{
-	background:#ddd;
+.pagination ul li.previous {
+    background: #ddd;
 }
-.pagination ul li.previous a,.pagination ul li.next a{
-	color:#070A57 !important;
+.pagination ul li.previous a,
+.pagination ul li.next a {
+    color: #070a57 !important;
 }
-.pagination ul li.next{
-	background:#00aaff;
+.pagination ul li.next {
+    background: #00aaff;
 }
-p.sub-heading {font-family: 'Roboto',sans-serif;font-size: 20px;line-height: 35px;color: #070A57;padding-top: 20px;}
+p.sub-heading {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 35px;
+    color: #070a57;
+    padding-top: 20px;
+}
 
 form#newsletter-form input#client-mail {
     max-width: 500px;
@@ -643,20 +663,21 @@ form#newsletter-form input#client-mail {
     border-radius: 3px;
 }
 
-form#newsletter-form button,.team-counter button {
+form#newsletter-form button,
+.team-counter button {
     background: #00a6ff;
     border: none;
     padding: 5px 12px;
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
-    color: #070A57;
+    color: #070a57;
 }
 
 /* Portfolio Page Styles */
 
 .portfolio-block {
     position: relative;
-    margin-bottom:20px;
+    margin-bottom: 20px;
     border: 2px solod red;
 }
 
@@ -671,18 +692,27 @@ form#newsletter-form button,.team-counter button {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-	display:none;
+    display: none;
 }
 
-.portfolio-block:hover .portfolio-overlay{
-	display:flex;
-	transition:0.5s ease;
+.portfolio-block:hover .portfolio-overlay {
+    display: flex;
+    transition: 0.5s ease;
 }
 
-.portfolio-overlay h3 {font-family: 'Roboto',sans-serif;font-size: 35px;font-weight: 500;color: #070A57;}
+.portfolio-overlay h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px;
+    font-weight: 500;
+    color: #070a57;
+}
 
-.portfolio-overlay p {font-family: 'Roboto',sans-serif;font-size: 20px;font-weight: 500;color: #64707D;}
-
+.portfolio-overlay p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #64707d;
+}
 
 section.portfolio-call-to-action {
     background: #bfdbff;
@@ -690,48 +720,65 @@ section.portfolio-call-to-action {
 }
 
 section.portfolio-call-to-action h2 {
-	font-family: 'Roboto',sans-serif;
-	font-size: 45px;
-	font-weight: 500;
-	line-height: 55px;
-	color: #070A57;
-	}
-	
-button.project-button-1,button.project-button-2 {
-    border: none;
-    padding: 10px 15px;
-    font-family: 'Roboto',sans-serif;
-    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 45px;
     font-weight: 500;
-    color: #070A57;
-	margin-right:15px;
-}
-button.project-button-1{
-	background:#009dff;
-}
-button.project-button-2{
-	background:#fff;
+    line-height: 55px;
+    color: #070a57;
 }
 
+button.project-button-1,
+button.project-button-2 {
+    border: none;
+    padding: 10px 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #070a57;
+    margin-right: 15px;
+}
+button.project-button-1 {
+    background: #009dff;
+}
+button.project-button-2 {
+    background: #fff;
+}
 
 /* Team Page Styles  */
 
-.team-page-description h2 {font-family: 'Roboto',sans-serif;font-size: 45px;font-weight: 500;color: #070A57;line-height: 32px;padding-bottom: 25px;}
+.team-page-description h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 45px;
+    font-weight: 500;
+    color: #070a57;
+    line-height: 32px;
+    padding-bottom: 25px;
+}
 
 .team-page-description p {
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     /* font-weight: 500; */
-    color: #070A57;
+    color: #070a57;
     line-height: 35px;
     padding-bottom: 25px;
 }
 .team-card {
     margin-bottom: 40px;
 }
-.team-card h3 {font-family: 'Roboto',sans-serif;font-size: 26px;font-weight: 500;color: #070A57;padding: 5px;}
+.team-card h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    color: #070a57;
+    padding: 5px;
+}
 
-.team-card p {font-family: 'Roboto',sans-serif;font-size: 14px;color: #64707D;}
+.team-card p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #64707d;
+}
 
 .team-card ul li {
     list-style: none;
@@ -749,10 +796,14 @@ button.project-button-2{
     transition: all 0.5s;
 }
 
-span.counter {font-family: 'Roboto',sans-serif;font-size: 45px;color: #070A57;}
+span.counter {
+    font-family: 'Roboto', sans-serif;
+    font-size: 45px;
+    color: #070a57;
+}
 
 span.counter-plus {
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 45px;
     color: #0981b0;
 }

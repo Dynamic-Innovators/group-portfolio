@@ -24,8 +24,7 @@ const Blog = () => {
                     </div>
                 </div>
             </section>
-            {/* Header End  */}
-            {/* Latest Blog Star  */}
+
             <section className='latest-blog section-padding'>
                 <div className='container'>
                     <div className='row'>

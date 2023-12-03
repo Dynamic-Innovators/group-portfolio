@@ -26,8 +26,7 @@ const Projects = () => {
                     </div>
                 </div>
             </section>
-            {/* Header End  */}
-            {/* Portfolio Start  */}
+
             <section className='portfolio section-padding'>
                 <div className='container'>
                     <div className='row'>

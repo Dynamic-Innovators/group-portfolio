@@ -5,10 +5,8 @@ const Service = () => {
     return (
         <>
             <section className='header contact-header'>
-                {/* Header Navigation Start  */}
                 <NavBar />
-                {/* Header Navigation End  */}
-                {/* Header Banner Start  */}
+
                 <div className='container header-content '>
                     <div className='row h-100'>
                         <div className='col-md-6 centralize'>
@@ -197,7 +195,7 @@ const Service = () => {
                     </div>
                 </div>
             </section>
-            {/*Why choose leadsbee*/}
+
             <section className='service-type section-padding'>
                 <div className='container'>
                     <div className='row'>
@@ -327,7 +325,7 @@ const Service = () => {
                     </div>
                 </div>
             </section>
-            {/*lets start*/}
+
             <section className='lets-start section-padding'>
                 <div className='container'>
                     <div className='row'>

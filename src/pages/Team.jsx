@@ -115,7 +115,7 @@ const Team = () => {
                     </div>
                 </div>
             </section>
-            {/* Team Section Start  */}
+
             <section className='team section-padding'>
                 <div className='container'>
                     <div className='row'>
@@ -394,15 +394,13 @@ const Team = () => {
                     </div>
                 </div>
             </section>
-            {/* Team Section End  */}
-            {/* Counter Section Start  */}
+
             <section className='achivements'>
                 <div
                     className='container section-padding'
                     style={{background: '#bfddff'}}
                 >
                     <div className='row'>
-                        {/* Items */}
                         <div className='col-lg-3 col-md-6 d-flex justify-content-center'>
                             <div className='achivement-item'>
                                 <img
@@ -417,7 +415,7 @@ const Team = () => {
                                 <h3>Staisfied Clients</h3>
                             </div>
                         </div>
-                        {/* Items */}
+
                         <div className='col-lg-3 col-md-6 d-flex justify-content-center'>
                             <div className='achivement-item'>
                                 <img
@@ -432,7 +430,7 @@ const Team = () => {
                                 <h3>Expert Team</h3>
                             </div>
                         </div>
-                        {/* Items */}
+
                         <div className='col-lg-3 col-md-6 d-flex justify-content-center'>
                             <div className='achivement-item'>
                                 <img
@@ -447,7 +445,7 @@ const Team = () => {
                                 <h3>Active Project</h3>
                             </div>
                         </div>
-                        {/* Items */}
+
                         <div className='col-lg-3 col-md-6 d-flex justify-content-center'>
                             <div className='achivement-item'>
                                 <img

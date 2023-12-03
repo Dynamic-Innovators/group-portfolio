@@ -5,10 +5,8 @@ const Contact = () => {
     return (
         <>
             <section className='header contact-header'>
-                {/* Header Navigation Start  */}
                 <NavBar />
-                {/* Header Navigation End  */}
-                {/* Header Banner Start  */}
+
                 <div className='container header-content '>
                     <div className='row h-100'>
                         <div className='col-md-6 centralize'>
@@ -28,8 +26,7 @@ const Contact = () => {
                     </div>
                 </div>
             </section>
-            {/* Header End  */}
-            {/* Company Offices Start  */}
+
             <section className='offices section-padding'>
                 <div className='container'>
                     <div className='row'>
@@ -81,12 +78,9 @@ const Contact = () => {
                     </div>
                 </div>
             </section>
-            {/* Company Offices End  */}
-            {/* Project Contact Start  */}
+
             <section className='project-contact section-padding'>
                 <div className='container'>
-                    {/* Toast  */}
-                    {/*?= $success; ?*/}
                     <div className='row mt-5'>
                         <h2 className='text-center w-100 service-heading'>
                             Tell Us About Your Project
@@ -107,7 +101,7 @@ const Contact = () => {
                                         placeholder='Your Name'
                                         required=''
                                     />
-                                    {/*placing icon using a span element*/}
+
                                     <span className='icon fa fa-user fa-lg' />
                                 </div>
                                 <div className='form-group'>
@@ -160,7 +154,6 @@ const Contact = () => {
                                         defaultValue='Submit'
                                         className='btn btn-default'
                                     />
-                                    {/* <button type="submit" class="btn btn-default">Submit Project Details <i class="fas fa-angle-right"></i> </button> */}
                                 </div>
                             </form>
                         </div>
@@ -176,8 +169,7 @@ const Contact = () => {
                     </div>
                 </div>
             </section>
-            {/* Project Contact End  */}
-            {/* Partner Start  */}
+
             <section className='partners section-padding'>
                 <div className='container'>
                     <div className='row'>
@@ -227,7 +219,7 @@ const Contact = () => {
                     </div>
                 </div>
             </section>
-            {/* Partner End  */}
+
             <Footer />
         </>
     );

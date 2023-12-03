@@ -1,23 +1,24 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500&display=swap');
+
+* {
     margin: 0;
     padding: 0;
 }
-html,body{
+html,
+body {
     height: 100%;
-    font-family:sans-serif;
+    font-family: sans-serif;
     scroll-behavior: smooth;
 }
-a:hover{
+a:hover {
     text-decoration: none;
 }
-.section-padding{
+.section-padding {
     padding: 70px;
 }
 /* Adding Fonts*/
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500&display=swap');
-
-.header{
+.header {
     background: linear-gradient(-40deg, #45cbd7, #ffffff);
     height: auto;
 }
@@ -26,26 +27,26 @@ a:hover{
 .header-nav {
     min-height: 90px;
 }
-.navbar-brand img{
+.navbar-brand img {
     width: 100%;
     height: auto;
 }
-.main-menu ul li{
+.main-menu ul li {
     margin-left: 26px;
     text-align: center;
 }
-.main-menu ul li a{
+.main-menu ul li a {
     font-family: 'Poppins', sans-serif;
-    color: #070A57;
+    color: #070a57;
     font-weight: 500;
     font-size: 16px;
 }
-.main-menu ul li:hover{
+.main-menu ul li:hover {
     transform: scale(1.1);
     transition: 0.5s all ease;
 }
-button.nav-button{
-    background:#00a2ff;
+button.nav-button {
+    background: #00a2ff;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     padding: 5px 10px;
@@ -60,40 +61,40 @@ button.nav-button{
 .container.header-content {
     height: 100%;
 }
-.highlight{
+.highlight {
     color: #00b3ff;
 }
 .left-content h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 60px;
     font-weight: 500;
-    color: #070A57;
+    color: #070a57;
 }
-.centralize{
+.centralize {
     display: flex;
     align-items: center;
 }
 .left-content p {
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    color: #64707D;
+    color: #64707d;
 }
 .call-to-action button {
     background: #00b3ff;
     border: none;
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 500;
     padding: 5px 10px;
 }
-.call-to-action button:hover{
+.call-to-action button:hover {
     transform: scale(1.1);
     transition: 0.5s all ease;
 }
 
 .call-to-action a {
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 500;
     color: #0099ff;
@@ -101,21 +102,21 @@ button.nav-button{
     margin-left: 30px;
 }
 
-.right-content img{
+.right-content img {
     width: auto;
     height: 25rem;
     padding-left: 30px;
 }
 
 /* Services styles  */
-.services{
+.services {
     background: linear-gradient(30deg, #d5f3fb, #ffffff);
 }
 .service-heading {
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 45px;
     font-weight: 500;
-    color: #070A57;
+    color: #070a57;
 }
 section.services {
     text-align: center;
@@ -123,18 +124,17 @@ section.services {
 .card-row-gap {
     padding-bottom: 2rem;
 }
-.card-body{
-background-color: #ebfcff;
-
+.card-body {
+    background-color: #ebfcff;
 }
-a.card-body{
+a.card-body {
     text-decoration: underline;
 }
 
 /* why choose leadsbee */
 
 .service-type-gap {
- padding-bottom: 8rem;
+    padding-bottom: 8rem;
 }
 h2.col-md-6 {
     padding-bottom: 3rem;
@@ -143,49 +143,55 @@ h2.col-md-6 {
 
 /* lets start */
 
-
-
 /* Footer Styles */
 
-.footer{
+.footer {
     background: linear-gradient(30deg, #d5f1fb, #fff);
 }
 .footer-widget-1 p {
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     line-height: 35px;
     margin-top: 20px;
     text-align: center;
 }
-.footer-widget-2 h3,.footer-widget-3 h3 {font-family: 'Roboto',sans-serif;font-size: 26px;font-weight: 500;line-height: 35px;}
+.footer-widget-2 h3,
+.footer-widget-3 h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 35px;
+}
 
-.footer-widget-2 ul li,.footer-widget-3 ul li {
+.footer-widget-2 ul li,
+.footer-widget-3 ul li {
     list-style: none;
     padding: 5px;
 }
 
-.footer-widget-2 ul li a,.footer-widget-3 ul li a {
-    font-family: 'Roboto',sans-serif;
+.footer-widget-2 ul li a,
+.footer-widget-3 ul li a {
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     line-height: 40px;
-    color: #64707D;
+    color: #64707d;
 }
-.footer-widget-4 p{
-    font-family: 'Roboto',sans-serif;
+.footer-widget-4 p {
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 40px;
     margin-top: 30px;
     margin-bottom: 20px;
 }
-.footer-widget-4 ul li{
+.footer-widget-4 ul li {
     list-style-type: none;
     display: inline;
     padding: 5px 10px;
     font-size: 27px;
 }
 .footer-widget-4 ul li a {
-    color: #DDDDDD;
+    color: #dddddd;
 }
 
 .footer-widget-4 ul li a:hover {

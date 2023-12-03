@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -14,16 +16,12 @@ a:hover {
 .section-padding {
     padding: 70px;
 }
-/* Adding Fonts*/
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;500&display=swap');
 
 .header {
     background: linear-gradient(-40deg, #3faceb, #ffffff);
     height: auto;
 }
 
-/* Header Navigation Styles */
 .header-nav {
     min-height: 90px;
 }
@@ -56,7 +54,6 @@ button.nav-button {
     border-radius: 5px;
 }
 
-/* Header Banner Area Styles */
 .head-page {
     margin-top: 10px;
     padding: 6px;
@@ -111,7 +108,6 @@ button.nav-button {
     padding-left: 30px;
 }
 
-/* best solutions for your business start */
 .sample-image-service {
     width: 45rem;
     border-radius: 3%;
@@ -131,7 +127,7 @@ button.nav-button {
 
 .feature li {
     padding-left: 2rem;
-    background-image: url(../image/check.svg);
+    background-image: url(/image/check.svg);
     background-repeat: no-repeat;
     line-height: 1.5rem;
     margin-bottom: 1rem;
@@ -140,8 +136,6 @@ button.nav-button {
 .feature {
     font-weight: bold;
 }
-
-/* Work process syles */
 
 .process-block {
     text-align: center;
@@ -185,8 +179,7 @@ button.nav-button {
     margin-left: 30px;
     height: auto;
 }
-.project-discussion-image img {
-}
+
 .project-discussion h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 45px;
@@ -216,9 +209,6 @@ button.nav-button {
     transform: scale(1.1);
     transition: 0.5s all ease;
 }
-/* Work process syles finish */
-
-/* Featured Designs */
 
 .square {
     position: relative;
@@ -238,8 +228,6 @@ button.nav-button {
     padding-left: 1.1rem;
     border-radius: 8%;
 }
-
-/* Footer Styles */
 
 .footer {
     background: linear-gradient(30deg, #78d2f5, #ffffff);

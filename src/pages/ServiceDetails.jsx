@@ -27,8 +27,7 @@ const ServiceDetails = () => {
                     </div>
                 </div>
             </section>
-            {/* Header End  */}
-            {/* Best solutions for your business start  */}
+
             <section className='best-solutions'>
                 <div className='container'>
                     <div className='row'>
@@ -154,8 +153,7 @@ const ServiceDetails = () => {
                     </div>
                 </div>
             </section>
-            {/* Best solutions for your business start finish */}
-            {/* Work Process Start  */}
+
             <section className='work-process section-padding'>
                 <div className='container'>
                     <div className='row'>

@@ -1,8 +1,8 @@
 $('#myCarousel').carousel({
-    interval: 5000
-})
+    interval: 5000,
+});
 
-$('#myCarousel .carousel-item').each(function() {
+$('#myCarousel .carousel-item').each(function () {
     var minPerSlide = 4;
     var next = $(this).next();
     if (!next.length) {
@@ -21,8 +21,8 @@ $('#myCarousel .carousel-item').each(function() {
 });
 var containerEl = document.querySelector('[data-ref~="mixitup-container"]');
 
-    var mixer = mixitup(containerEl, {
+var mixer = mixitup(containerEl, {
     selectors: {
-        target: '[data-ref~="mixitup-target"]'
-    }
+        target: '[data-ref~="mixitup-target"]',
+    },
 });

@@ -29,8 +29,7 @@ const BlogDetails = () => {
                     </div>
                 </div>
             </section>
-            {/* Header End  */}
-            {/* Blog details start  */}
+
             <section className='best-solutions'>
                 <div
                     className='container'
