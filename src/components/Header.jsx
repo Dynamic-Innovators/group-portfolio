@@ -1,6 +1,6 @@
 const Header = () => {
     return (
-        <div className='container header-content '>
+        <div className='container header-content head-page '>
             <div className='row '>
                 <div className='col-md-6 centralize'>
                     <div className='left-content '>

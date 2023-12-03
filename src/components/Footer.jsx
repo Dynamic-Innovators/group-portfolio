@@ -8,10 +8,7 @@ const Footer = () => {
                             <img src='/image/footer.png' alt='' />
                             <p>
                                 Welcome to Dynamic Innovators, where creativity
-                                meets innovation. We are passionate about
-                                delivering cutting-edge solutions to elevate
-                                your business. Lorem ipsum dolor sit,
-                                consectetur adipiscing elit. Cras dignissim.
+                                meets innovation.
                             </p>
                         </div>
                     </div>

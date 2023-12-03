@@ -1,4 +1,57 @@
+import React, {useState} from 'react';
+
 const Services = () => {
+    const [activeIndex, setActiveIndex] = useState(0);
+
+    const handlePrev = () => {
+        const newIndex = (activeIndex - 1 + 6) % 6;
+        setActiveIndex(newIndex);
+    };
+
+    const handleNext = () => {
+        const newIndex = (activeIndex + 1) % 6;
+        setActiveIndex(newIndex);
+    };
+
+    const services = [
+        {
+            title: 'UI/UX',
+            description:
+                'Crafting delightful user experiences to elevate your digital presence.',
+            image: '/image/ui-ux.jpeg',
+        },
+        {
+            title: 'Website Optimization and Development',
+            description:
+                'Transforming websites into powerful tools for success with optimization and development strategies.',
+            image: '/image/webdev.png',
+        },
+        {
+            title: 'Social Media Marketing',
+            description:
+                'Building your brand and engaging audiences through effective social media marketing strategies.',
+            image: '/image/socialmedia.jpeg',
+        },
+        {
+            title: 'App Development',
+            description:
+                'Turning innovative ideas into functional and user-friendly mobile applications.',
+            image: '/image/appdev.png',
+        },
+        {
+            title: 'Project Management',
+            description:
+                'Efficiently plan, execute, and oversee projects for successful and timely completion.',
+            image: '/image/pm.png',
+        },
+        {
+            title: 'Office Productivity',
+            description:
+                'Enhancing workplace efficiency and productivity with tailored solutions.',
+            image: '/image/mso.webp',
+        },
+    ];
+
     return (
         <section className='services section-padding'>
             <div className='container'>
@@ -22,153 +75,35 @@ const Services = () => {
                             className='.service-carousel carousel-inner w-100'
                             role='listbox'
                         >
-                            <div className='carousel-item active'>
-                                <div className='col-lg-4 col-md-6 col-sm-12 col-12'>
-                                    <div
-                                        className='card service-card'
-                                        style={{width: '18rem'}}
-                                    >
-                                        <img
-                                            className='card-img-top'
-                                            src='/image/ui-ux.jpeg'
-                                            alt='Card image cap'
-                                        />
-                                        <div className='card-body bg-white'>
-                                            <h5 className='card-title'>
-                                                UI/UX
-                                            </h5>
-                                            <p className='card-text'>
-                                                Crafting delightful user
-                                                experiences to elevate your
-                                                digital presence.
-                                            </p>
+                            {services.map((service, index) => (
+                                <div
+                                    key={index}
+                                    className={`carousel-item ${
+                                        index === activeIndex ? 'active' : ''
+                                    }`}
+                                >
+                                    <div className='col-lg-4 col-md-6 col-sm-12 col-12'>
+                                        <div
+                                            className='card service-card'
+                                            style={{width: '18rem'}}
+                                        >
+                                            <img
+                                                className='card-img-top'
+                                                src={service.image}
+                                                alt='Card image cap'
+                                            />
+                                            <div className='card-body bg-white'>
+                                                <h5 className='card-title'>
+                                                    {service.title}
+                                                </h5>
+                                                <p className='card-text'>
+                                                    {service.description}
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div className='carousel-item'>
-                                <div className='col-lg-4 col-md-6 col-sm-12 col-12'>
-                                    <div
-                                        className='card service-card'
-                                        style={{width: '18rem'}}
-                                    >
-                                        <img
-                                            className='card-img-top'
-                                            src='/image/webdev.png'
-                                            alt='Card image cap'
-                                        />
-                                        <div className='card-body bg-white'>
-                                            <h5 className='card-title'>
-                                                Website Optimization and
-                                                Development
-                                            </h5>
-                                            <p className='card-text'>
-                                                Transforming websites into
-                                                powerful tools for success with
-                                                optimization and development
-                                                strategies.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='carousel-item'>
-                                <div className='col-lg-4 col-md-6 col-sm-12 col-12'>
-                                    <div
-                                        className='card service-card'
-                                        style={{width: '18rem'}}
-                                    >
-                                        <img
-                                            className='card-img-top'
-                                            src='/image/socialmedia.jpeg'
-                                            alt='Card image cap'
-                                        />
-                                        <div className='card-body bg-white'>
-                                            <h5 className='card-title'>
-                                                Social Media Marketing
-                                            </h5>
-                                            <p className='card-text'>
-                                                Building your brand and engaging
-                                                audiences through effective
-                                                social media marketing
-                                                strategies.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='carousel-item'>
-                                <div className='col-lg-4 col-md-6 col-sm-12 col-12'>
-                                    <div
-                                        className='card service-card'
-                                        style={{width: '18rem'}}
-                                    >
-                                        <img
-                                            className='card-img-top'
-                                            src='/image/appdev.png'
-                                            alt='Card image cap'
-                                        />
-                                        <div className='card-body bg-white'>
-                                            <h5 className='card-title'>
-                                                App Development
-                                            </h5>
-                                            <p className='card-text'>
-                                                Turning innovative ideas into
-                                                functional and user-friendly
-                                                mobile applications.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='carousel-item'>
-                                <div className='col-lg-4 col-md-6 col-sm-12 col-12'>
-                                    <div
-                                        className='card service-card'
-                                        style={{width: '18rem'}}
-                                    >
-                                        <img
-                                            className='card-img-top'
-                                            src='/image/pm.png'
-                                            alt='Card image cap'
-                                        />
-                                        <div className='card-body bg-white'>
-                                            <h5 className='card-title'>
-                                                Project Management
-                                            </h5>
-                                            <p className='card-text'>
-                                                Efficiently plan, execute, and
-                                                oversee projects for successful
-                                                and timely completion.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className='carousel-item'>
-                                <div className='col-lg-4 col-md-6 col-sm-12 col-12'>
-                                    <div
-                                        className='card service-card'
-                                        style={{width: '18rem'}}
-                                    >
-                                        <img
-                                            className='card-img-top'
-                                            src='/image/mso.webp'
-                                            alt='Card image cap'
-                                        />
-                                        <div className='card-body bg-white'>
-                                            <h5 className='card-title'>
-                                                Office Productivity
-                                            </h5>
-                                            <p className='card-text'>
-                                                Enhancing workplace efficiency
-                                                and productivity with tailored
-                                                solutions.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            ))}
                         </div>
                         <a
                             className='carousel-control-prev w-auto '
