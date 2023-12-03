@@ -1,17 +1,7 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 
 const Services = () => {
     const [activeIndex, setActiveIndex] = useState(0);
-
-    const handlePrev = () => {
-        const newIndex = (activeIndex - 1 + 6) % 6;
-        setActiveIndex(newIndex);
-    };
-
-    const handleNext = () => {
-        const newIndex = (activeIndex + 1) % 6;
-        setActiveIndex(newIndex);
-    };
 
     const services = [
         {
@@ -52,6 +42,26 @@ const Services = () => {
         },
     ];
 
+    const handlePrev = () => {
+        setActiveIndex((prevIndex) =>
+            prevIndex === 0 ? services.length - 1 : prevIndex - 1,
+        );
+    };
+
+    const handleNext = () => {
+        setActiveIndex((prevIndex) =>
+            prevIndex === services.length - 1 ? 0 : prevIndex + 1,
+        );
+    };
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            handleNext();
+        }, 5000); // Auto transition every 5 seconds
+
+        return () => clearInterval(interval);
+    }, []);
+
     return (
         <section className='services section-padding'>
             <div className='container'>
@@ -78,7 +88,7 @@ const Services = () => {
                             {services.map((service, index) => (
                                 <div
                                     key={index}
-                                    className={`carousel-item ${
+                                    className={`carousel-item card ${
                                         index === activeIndex ? 'active' : ''
                                     }`}
                                 >
@@ -110,6 +120,7 @@ const Services = () => {
                             href='#myCarousel'
                             role='button'
                             data-slide='prev'
+                            onClick={handlePrev}
                         >
                             <span
                                 className='carousel-control-prev-icon service-control-prev'
@@ -122,6 +133,7 @@ const Services = () => {
                             href='#myCarousel'
                             role='button'
                             data-slide='next'
+                            onClick={handleNext}
                         >
                             <span
                                 className='carousel-control-next-icon service-control-next'

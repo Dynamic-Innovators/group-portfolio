@@ -6,3 +6,8 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+
+.card {
+    padding: 5px;
+    background-color: rgb(156, 156, 162);
+}
